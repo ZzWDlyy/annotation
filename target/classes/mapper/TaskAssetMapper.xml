@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.slowcoder.annotation.mapper.TaskAssetMapper">
+
+    <!-- 增加 useGeneratedKeys 并不是必须的，但习惯加上 -->
+    <select id="findAssetsForGrab" resultType="com.slowcoder.annotation.entity.TaskAsset">
+        SELECT t.*
+        FROM task_asset t
+        WHERE t.task_id = #{taskId}
+        AND t.status = 0
+        AND (
+        t.labeled_count + (
+        SELECT COUNT(*)
+        FROM task_assignment ta
+        WHERE ta.asset_id = t.id
+        AND ta.status = 0
+        )
+        ) &lt; #{targetCount}
+
+        -- 排除当前用户已标过的
+        AND NOT EXISTS (
+        SELECT 1 FROM annotation_record ar
+        WHERE ar.asset_id = t.id AND ar.user_id = #{userId}
+        )
+
+        -- 排除当前用户正在标的
+        AND NOT EXISTS (
+        SELECT 1 FROM task_assignment ta2
+        WHERE ta2.asset_id = t.id
+        AND ta2.user_id = #{userId}
+        AND ta2.status = 0
+        )
+
+        ORDER BY t.id ASC  -- 改为顺序，避免 RAND() 性能问题
+        LIMIT #{limit}
+        FOR UPDATE;  -- 🔥 关键！锁住这些行
+    </select>
+
+
+</mapper>

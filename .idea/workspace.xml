@@ -4,12 +4,87 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de2d3ef6-ad1f-4b42-bde6-c831d592c201" name="Changes" comment="" />
+    <list default="true" id="de2d3ef6-ad1f-4b42-bde6-c831d592c201" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/slowcoder/annotation/common/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/slowcoder/annotation/common/IErrorCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/slowcoder/annotation/common/Result.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/slowcoder/annotation/common/ResultCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/slowcoder/annotation/config/MyBatisPlusConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/slowcoder/annotation/config/ObsConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/slowcoder/annotation/config/SaTokenConfigure.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/slowcoder/annotation/controller/AdminController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/slowcoder/annotation/controller/AdminUserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/slowcoder/annotation/controller/AssignController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/slowcoder/annotation/controller/AuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/slowcoder/annotation/controller/ProjectController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/slowcoder/annotation/controller/TaskController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/slowcoder/annotation/dto/AddUserReq.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/slowcoder/annotation/dto/AnnotationRecordVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/slowcoder/annotation/dto/AssetImportReq.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/slowcoder/annotation/dto/AssignTaskReq.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/slowcoder/annotation/dto/ExportRecordDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/slowcoder/annotation/dto/LoginReq.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/slowcoder/annotation/dto/ProjectCreateReq.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/slowcoder/annotation/dto/RejectReq.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/slowcoder/annotation/dto/ReviewQueryReq.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/slowcoder/annotation/dto/StatProjectDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/slowcoder/annotation/dto/StatUserDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/slowcoder/annotation/dto/SubmitReq.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/slowcoder/annotation/dto/TaskGrabReq.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/slowcoder/annotation/dto/UserRegisterReq.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/slowcoder/annotation/entity/AnnotationRecord.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/slowcoder/annotation/entity/ProjectTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/slowcoder/annotation/entity/TaskAsset.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/slowcoder/annotation/entity/TaskAssignment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/slowcoder/annotation/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/slowcoder/annotation/mapper/AnnotationRecordMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/slowcoder/annotation/mapper/ProjectTaskMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/slowcoder/annotation/mapper/TaskAssetMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/slowcoder/annotation/mapper/TaskAssignmentMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/slowcoder/annotation/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/slowcoder/annotation/service/CaptchaService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/slowcoder/annotation/service/ObsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/slowcoder/annotation/service/ProjectService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/slowcoder/annotation/service/TaskAssetService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/slowcoder/annotation/service/TaskService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/slowcoder/annotation/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/slowcoder/annotation/service/impl/CaptchaServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/slowcoder/annotation/service/impl/ProjectServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/slowcoder/annotation/service/impl/StpInterfaceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/slowcoder/annotation/service/impl/TaskAssetServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/slowcoder/annotation/service/impl/TaskServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/slowcoder/annotation/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/AnnotationRecordMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/TaskAssetMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/slowcoder/annotation/ProjectTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
+  <component name="KubernetesApiProvider"><![CDATA[{
+  "isMigrated": true
+}]]></component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -32,9 +107,18 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.ProjectTest.executor": "Run",
+    "JUnit.ProjectTest.testCreateProjectWithJson.executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.AnnotationApplication.executor": "Run",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "F:/javaProject/annotation/src/main/resources",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -42,9 +126,53 @@
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\javaProject\annotation\src\main\resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\javaProject\annotation\src\main\resources\mapper" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.AnnotationApplication">
+    <configuration name="ProjectTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="annotation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.slowcoder.annotation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.slowcoder.annotation" />
+      <option name="MAIN_CLASS_NAME" value="com.slowcoder.annotation.ProjectTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProjectTest.testCreateProjectWithJson" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="annotation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.slowcoder.annotation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.slowcoder.annotation" />
+      <option name="MAIN_CLASS_NAME" value="com.slowcoder.annotation.ProjectTest" />
+      <option name="METHOD_NAME" value="testCreateProjectWithJson" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="AnnotationApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="annotation" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.slowcoder.annotation.AnnotationApplication" />
@@ -52,6 +180,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ProjectTest" />
+        <item itemvalue="JUnit.ProjectTest.testCreateProjectWithJson" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -69,7 +203,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1764038230860</updated>
-      <workItem from="1764038231900" duration="314000" />
+      <workItem from="1764038231900" duration="48514000" />
     </task>
     <servers />
   </component>

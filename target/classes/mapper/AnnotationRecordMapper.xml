@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.slowcoder.annotation.mapper.AnnotationRecordMapper">
+
+    <select id="getUserStats" resultType="com.slowcoder.annotation.dto.StatUserDTO">
+        SELECT
+            ar.user_id AS userId,
+            u.username AS username,
+            COUNT(*) AS totalSubmitted,
+            SUM(CASE WHEN ar.review_status = 2 THEN 1 ELSE 0 END) AS rejectedCount,
+            ROUND(
+                    SUM(CASE WHEN ar.review_status = 2 THEN 1 ELSE 0 END) * 100.0 / COUNT(*),
+                    2
+            ) AS rejectedRate,
+            ROUND(AVG(ar.duration), 2) AS avgTimeCost
+        FROM annotation_record ar
+                 LEFT JOIN sys_user u ON ar.user_id = u.id
+        WHERE ar.task_id = #{taskId}
+        GROUP BY ar.user_id, u.username
+        ORDER BY totalSubmitted DESC
+    </select>
+
+</mapper>
